@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body class="bg-gray-50">
+    <section id="mobile-navbar" class="hidden lg:hidden fixed inset-0 z-10 px-6 bg-white">
+        <ul class="w-full h-full flex flex-col justify-center items-center space-y-8 capitalize text-lg font-semibold text-primary">
+            <li class="">home</li>
+            <li class="">about me</li>
+            <li class="">skills</li>
+            <li class="">qualifications</li>
+            <li class="">contact me</li>
+        </ul>
+    </section>
+
+    <section class="lg:hidden fixed bottom-0 inset-x-0 z-10 h-12 px-6 flex justify-between items-center bg-white border-t border-light text-primary">
+        <button onclick="toggleNavbar()">
+            <svg class="w-6 fill-current" version="1.1" id="svg_cub" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve"><g> <g id="Grid"> <path d="M144.364,0H24.061C10.767,0,0,10.767,0,24.061v120.303c0,13.281,10.767,24.061,24.061,24.061h120.303 c13.293,0,24.061-10.779,24.061-24.061V24.061C168.424,10.767,157.657,0,144.364,0z M144.364,144.364H24.061V24.061h120.303 V144.364z"/> <path d="M360.909,0H240.606c-13.293,0-24.061,10.767-24.061,24.061v120.303c0,13.281,10.767,24.061,24.061,24.061h120.303 c13.281,0,24.061-10.779,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,144.364H240.606V24.061h120.303 V144.364z"/> <path d="M360.909,216.545H240.606c-13.293,0-24.061,10.779-24.061,24.061v120.303c0,13.293,10.767,24.061,24.061,24.061h120.303 c13.281,0,24.061-10.767,24.061-24.061V240.606C384.97,227.313,374.191,216.545,360.909,216.545z M360.909,360.909H240.606 V240.606h120.303V360.909z"/> <path d="M144.364,216.545H24.061C10.767,216.545,0,227.325,0,240.606v120.303c0,13.293,10.767,24.061,24.061,24.061h120.303 c13.293,0,24.061-10.767,24.061-24.061V240.606C168.424,227.313,157.657,216.545,144.364,216.545z M144.364,360.909H24.061 V240.606h120.303V360.909z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            <svg class="hidden w-5 fill-current" version="1.1" id="svg_x" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.775 460.775" style="enable-background:new 0 0 460.775 460.775;" xml:space="preserve"><path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        </button>
+
+        <a href="#" class="uppercase text-xl font-medium text-primary">i<span class="text-secondary">.</span>smail</a>
+    </section>
+    
+    <section class="hidden lg:flex fixed inset-0 z-50 h-14 bg-white shadow-md">
+        <nav class="flex-grow max-w-4xl mx-auto h-full flex justify-between items-center">
+            <a href="#" class="uppercase text-xl font-medium text-primary">i<span class="text-secondary">.</span>smail</a>
+
+            <ul class="flex space-x-4 capitalize text-base font-semibold text-primary">
+                <li><a href="#" class="hover:text-secondary">home</a></li>
+                <li><a href="#" class="hover:text-secondary">about me</a></li>
+                <li><a href="#" class="hover:text-secondary">skills</a></li>
+                <li><a href="#" class="hover:text-secondary">qualifications</a></li>
+                <li><a href="#" class="hover:text-secondary">contact me</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Home Section -->
+    <section class="relative h-screen">
+        <div class="h-full w-full lg:max-w-4xl mx-auto px-6 lg:px-0 py-32 lg:py-48 lg:flex flex-row-reverse">
+            <div class="relative w-full">
+                <div class="w-52 h-52 lg:w-80 lg:h-80 mx-auto p-0.5 rounded-full border-4 border-primary shadow-xl">
+                    <div class="bg-gradient-to-b from-primary via-light to-white border-4 border-white rounded-full overflow-hidden">
+                        <img src="./dist/assets/img-home.png" alt="web developer">
+                    </div>
+                </div>
+    
+                <ul class="lg:hidden absolute top-1/2 -translate-y-1/2 -left-3 flex flex-col justify-center space-y-5">
+                    <li class="group w-8 h-8 flex justify-center items-center bg-primary rounded-md border-2 border-white hover:bg-white hover:border-primary">
+                        <a href="https://www.linkedin.com/in/ismail-ayou-970578167/" target="_blank" class="flex">
+                            <svg class="w-7 fill-white group-hover:fill-primary" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 8.6425781 4 C 7.1835781 4 6 5.181625 6 6.640625 C 6 8.099625 7.182625 9.3085938 8.640625 9.3085938 C 10.098625 9.3085938 11.283203 8.099625 11.283203 6.640625 C 11.283203 5.182625 10.101578 4 8.6425781 4 z M 21.535156 11 C 19.316156 11 18.0465 12.160453 17.4375 13.314453 L 17.373047 13.314453 L 17.373047 11.310547 L 13 11.310547 L 13 26 L 17.556641 26 L 17.556641 18.728516 C 17.556641 16.812516 17.701266 14.960938 20.072266 14.960938 C 22.409266 14.960937 22.443359 17.145609 22.443359 18.849609 L 22.443359 26 L 26.994141 26 L 27 26 L 27 17.931641 C 27 13.983641 26.151156 11 21.535156 11 z M 6.3632812 11.310547 L 6.3632812 26 L 10.923828 26 L 10.923828 11.310547 L 6.3632812 11.310547 z"/></svg>
+                        </a>
+                    </li>
+    
+                    <li class="group w-8 h-8 flex justify-center items-center bg-primary rounded-md border-2 border-white hover:bg-white hover:border-primary">
+                        <a href="https://wa.me/00212606633964" target="_blank" class="flex">
+                            <svg class="w-5 fill-white group-hover:fill-primary" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                        </a>
+                    </li>
+    
+                    <li class="group w-8 h-8 flex justify-center items-center bg-primary rounded-md border-2 border-white hover:bg-white hover:border-primary">
+                        <a href="tel:00 212 6 06 63 39 64" class="flex">
+                            <svg class="w-5 fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="52px" height="52px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><path d="M48.5,37.9L42.4,33c-1.4-1.1-3.4-1.2-4.8-0.1l-5.2,3.8c-0.6,0.5-1.5,0.4-2.1-0.2l-7.8-7l-7-7.8 c-0.6-0.6-0.6-1.4-0.2-2.1l3.8-5.2c1.1-1.4,1-3.4-0.1-4.8l-4.9-6.1c-1.5-1.8-4.2-2-5.9-0.3L3,8.4c-0.8,0.8-1.2,1.9-1.2,3 c0.5,10.2,5.1,19.9,11.9,26.7S30.2,49.5,40.4,50c1.1,0.1,2.2-0.4,3-1.2l5.2-5.2C50.5,42.1,50.4,39.3,48.5,37.9z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="hidden lg:flex justify-center space-x-5 mt-10">
+                    <li class="group w-11 h-11 flex justify-center items-center bg-primary rounded-md border-2 border-transparent hover:bg-white hover:border-primary">
+                        <a href="https://www.linkedin.com/in/ismail-ayou-970578167/" target="_blank" title="linkdedin ismail ayou - web developer" class="flex">
+                            <svg class="w-9 fill-white group-hover:fill-primary" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 8.6425781 4 C 7.1835781 4 6 5.181625 6 6.640625 C 6 8.099625 7.182625 9.3085938 8.640625 9.3085938 C 10.098625 9.3085938 11.283203 8.099625 11.283203 6.640625 C 11.283203 5.182625 10.101578 4 8.6425781 4 z M 21.535156 11 C 19.316156 11 18.0465 12.160453 17.4375 13.314453 L 17.373047 13.314453 L 17.373047 11.310547 L 13 11.310547 L 13 26 L 17.556641 26 L 17.556641 18.728516 C 17.556641 16.812516 17.701266 14.960938 20.072266 14.960938 C 22.409266 14.960937 22.443359 17.145609 22.443359 18.849609 L 22.443359 26 L 26.994141 26 L 27 26 L 27 17.931641 C 27 13.983641 26.151156 11 21.535156 11 z M 6.3632812 11.310547 L 6.3632812 26 L 10.923828 26 L 10.923828 11.310547 L 6.3632812 11.310547 z"/></svg>
+                        </a>
+                    </li>
+    
+                    <li class="group w-11 h-11 flex justify-center items-center bg-primary rounded-md border-2 border-transparent hover:bg-white hover:border-primary">
+                        <a href="https://wa.me/00212606633964" target="_blank" class="flex">
+                            <svg class="w-7 fill-white group-hover:fill-primary" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                        </a>
+                    </li>
+    
+                    <li class="group w-11 h-11 flex justify-center items-center bg-primary rounded-md border-2 border-transparent hover:bg-white hover:border-primary">
+                        <a href="tel:00 212 6 06 63 39 64" class="flex">
+                            <svg class="w-7 fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="52px" height="52px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><path d="M48.5,37.9L42.4,33c-1.4-1.1-3.4-1.2-4.8-0.1l-5.2,3.8c-0.6,0.5-1.5,0.4-2.1-0.2l-7.8-7l-7-7.8 c-0.6-0.6-0.6-1.4-0.2-2.1l3.8-5.2c1.1-1.4,1-3.4-0.1-4.8l-4.9-6.1c-1.5-1.8-4.2-2-5.9-0.3L3,8.4c-0.8,0.8-1.2,1.9-1.2,3 c0.5,10.2,5.1,19.9,11.9,26.7S30.2,49.5,40.4,50c1.1,0.1,2.2-0.4,3-1.2l5.2-5.2C50.5,42.1,50.4,39.3,48.5,37.9z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="mt-8 space-y-6">
+                <div class="space-y-2">
+                    <h1 class="text-3xl capitalize text-primary">hi, i'm <span class="uppercase font-medium">Ismail Ayou</span></h1>
+                    <p class="text-gray-700">I am a FullStack Web Developer, I have experiences in creating and building web sites with <span class="text-primary font-medium">laravel</span> <span class="text-gray-400"> (backend)</span>, <span class="text-primary font-medium">vue js</span> <span class="text-gray-400"> (frontend)</span>.</p>
+                </div>
+    
+                <a href="#contact-me" class="inline-flex px-5 py-2 font-medium text-white bg-primary border-2 border-transparent hover:text-primary hover:bg-white hover:border-primary rounded-md shadow-md shadow-primary hover:translate-y-2 duration-500">contact me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="w-full lg:max-w-4xl mx-auto px-6 lg:px-0 space-y-12">
+        <div class="text-center">
+            <h2 class="capitalize text-3xl font-semibold tracking-wider text-primary">about me</h2>
+            <h6 class="text-lg font-semibold text-secondary">My introduction</h6>
+        </div>
+
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex-shrink-0 w-44 h-44 lg:w-64 lg:h-64 mx-auto rounded-lg overflow-hidden bg-gradient-to-b from-primary to-white">
+                <img src="./dist/assets/img-home.png" alt="">
+            </div>
+    
+            <div class="lg:w-1/2 mt-8 space-y-8">
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloribus tempora voluptate dolor beatae nesciunt nostrum provident officiis? Quo, dolorem. </p>
+    
+                <a href="./dist/assets/CV Ismail Ayou.pdf" target="_blank" class="inline-flex px-5 py-2 justify-center items-center space-x-3 font-medium text-white bg-primary border-2 border-transparent hover:bg-secondary hover:border-secondary rounded-md shadow-md shadow-primary hover:translate-y-2 duration-500">
+                    <span>Download CV</span>
+                    <svg class="w-5 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><path d="M19,19H1c-0.6,0-1-0.4-1-1v-5h2v4h16v-4h2v5C20,18.6,19.6,19,19,19z"/><path d="M15.7,7.3c-0.4-0.4-1-0.4-1.4,0L11,10.6V2c0-0.6-0.4-1-1-1S9,1.4,9,2v8.6L5.7,7.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5,5 c0.4,0.4,1,0.4,1.4,0l5-5C16.1,8.3,16.1,7.7,15.7,7.3z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="mt-32 w-full lg:max-w-4xl mx-auto px-6 lg:px-0 space-y-12">
+        <div class="text-center">
+            <h2 class="capitalize text-3xl font-semibold tracking-wider text-primary">Skills</h2>
+            <h6 class="text-lg font-semibold text-secondary">My technical level</h6>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center items-start space-y-7 lg:space-y-0 lg:space-x-14">
+            <div class="flex-grow-0 w-full lg:w-80 px-10 py-5 space-y-5 bg-white rounded-lg shadow-inner">
+                <h3 class="text-center text-xl font-semibold text-primary">Frontend developer</h3>
+
+                <div class="grid grid-cols-2 gap-x-5 text-secondary">
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">HTML</h4>
+                                <h5 class="text-sm text-gray-400">Intermediate</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">CSS</h4>
+                                <h5 class="text-sm text-gray-400">Moyen</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">JavaScript</h4>
+                                <h5 class="text-sm text-gray-400">Intermediate</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">Tailwindcss</h4>
+                                <h5 class="text-sm text-gray-400">advanced</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">Git</h4>
+                                <h5 class="text-sm text-gray-400">Basic</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">Vue</h4>
+                                <h5 class="text-sm text-gray-400">Intermediate</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-grow-0 w-full lg:w-80 px-10 py-5 space-y-5 bg-white rounded-lg shadow-inner">
+                <h3 class="text-center text-xl font-semibold text-primary">Backend developer</h3>
+
+                <div class="grid grid-cols-2 gap-x-5 text-secondary">
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">PHP</h4>
+                                <h5 class="text-sm text-gray-400">advanced</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">MySQL</h4>
+                                <h5 class="text-sm text-gray-400">Intermediate</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-start justify-start space-x-2">
+                            <div>
+                                <svg class="w-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z"/></svg>
+                            </div>
+        
+                            <div>
+                                <h4 class="font-medium">Laravel</h4>
+                                <h5 class="text-sm text-gray-400">advanced</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualification Section -->
+    <section class="mt-32 w-full lg:max-w-sm mx-auto px-6 lg:px-0 space-y-12">
+        <div class="text-center">
+            <h2 class="capitalize text-3xl font-semibold tracking-wider text-primary">Qualification</h2>
+            <h6 class="text-lg font-semibold text-secondary">My personel journey</h6>
+        </div>
+
+        <div class="space-y-7">
+            <div class="flex justify-center items-end space-x-5">
+                <button id="btn_educations" class="flex justify-start items-center space-x-2 px-1 py-0.5 text-secondary !text-white !bg-light rounded-lg">
+                    <div>
+                        <svg class="w-7 stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.5L2 9.5L12 14.5L22 9.5L12 4.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 11V16L12 19.5L5 16V11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 14V18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="text-xl font-medium">Education</h3>
+                </button>
+                <button id="btn_experiences" onclick="toggleQualifications()" class="flex justify-start items-center space-x-2 px-1 py-0.5 text-secondary rounded-lg">
+                    <div>
+                        <svg class="w-7 stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7V4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4V7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 12H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 12V14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 12V14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="text-xl font-medium">Experience</h3>
+                </button>
+            </div>
+
+            <!-- Educations Qaulification -->
+            <div id="educations_qualification" class="relative">
+                <div class="h-24 w-[1px] mx-auto border-l-2 border-light">
+                    <div class="absolute left-0 w-1/2 pr-3 lg:pr-0">
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary">Bachelor Degree</h4>
+                            <h5 class="font-medium">Rabat</h5>
+                        </div>
+    
+                        <h6 class="mt-2 flex space-x-3 text-gray-400">
+                            <svg class="w-4 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M495.195,69.462h-54.337V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416 V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444H16.805C7.524,69.462,0,76.986,0,86.267v369.716 c0,9.281,7.524,16.805,16.805,16.805h478.39c9.281,0,16.805-7.524,16.805-16.805V86.267C512,76.986,504.476,69.462,495.195,69.462 z M478.39,439.177H33.61V103.072h37.532v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669 h50.416v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h37.532V439.177z"/> </g></g><g> <g> <path d="M283.449,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,330.185,292.73,322.661,283.449,322.661z M266.643,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M408.088,322.661H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,330.185,417.369,322.661,408.088,322.661z M391.282,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M158.81,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,330.185,168.091,322.661,158.81,322.661z M142.004,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M283.449,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,199.104,292.73,191.58,283.449,191.58z M266.643,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M408.088,191.58H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,199.104,417.369,191.58,408.088,191.58z M391.282,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M158.81,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,199.104,168.091,191.58,158.81,191.58z M142.004,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span class="text-sm">2016</span>
+                        </h6>
+
+                        <div class="absolute -right-2 top-0 w-4 h-4 bg-light rounded-full"></div>
+                    </div>
+                    <div class="absolute top-20 -right-5 w-1/2">
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary">Development Diploma</h4>
+                            <h5 class="font-medium">Rabat - ISTA</h5>
+                        </div>
+    
+                        <h6 class="mt-2 flex space-x-3 text-gray-400">
+                            <svg class="w-4 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M495.195,69.462h-54.337V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416 V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444H16.805C7.524,69.462,0,76.986,0,86.267v369.716 c0,9.281,7.524,16.805,16.805,16.805h478.39c9.281,0,16.805-7.524,16.805-16.805V86.267C512,76.986,504.476,69.462,495.195,69.462 z M478.39,439.177H33.61V103.072h37.532v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669 h50.416v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h37.532V439.177z"/> </g></g><g> <g> <path d="M283.449,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,330.185,292.73,322.661,283.449,322.661z M266.643,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M408.088,322.661H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,330.185,417.369,322.661,408.088,322.661z M391.282,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M158.81,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,330.185,168.091,322.661,158.81,322.661z M142.004,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M283.449,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,199.104,292.73,191.58,283.449,191.58z M266.643,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M408.088,191.58H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,199.104,417.369,191.58,408.088,191.58z M391.282,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M158.81,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,199.104,168.091,191.58,158.81,191.58z M142.004,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span class="text-sm">2019</span>
+                        </h6>
+
+                        <div class="absolute -left-7 top-0 w-4 h-4 bg-light rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="experiences_qualification" class="hidden relative">
+                <div class="h-44 w-[1px] mx-auto border-l-2 border-light">
+                    <div class="absolute left-0 w-1/2 pr-3 lg:pr-0">
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary">Web Developer</h4>
+                            <h5 class="font-medium">Rabat - Linkston</h5>
+                        </div>
+    
+                        <h6 class="mt-2 flex space-x-3 text-gray-400">
+                            <svg class="w-4 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M495.195,69.462h-54.337V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416 V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444H16.805C7.524,69.462,0,76.986,0,86.267v369.716 c0,9.281,7.524,16.805,16.805,16.805h478.39c9.281,0,16.805-7.524,16.805-16.805V86.267C512,76.986,504.476,69.462,495.195,69.462 z M478.39,439.177H33.61V103.072h37.532v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669 h50.416v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h37.532V439.177z"/> </g></g><g> <g> <path d="M283.449,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,330.185,292.73,322.661,283.449,322.661z M266.643,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M408.088,322.661H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,330.185,417.369,322.661,408.088,322.661z M391.282,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M158.81,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,330.185,168.091,322.661,158.81,322.661z M142.004,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M283.449,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,199.104,292.73,191.58,283.449,191.58z M266.643,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M408.088,191.58H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,199.104,417.369,191.58,408.088,191.58z M391.282,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M158.81,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,199.104,168.091,191.58,158.81,191.58z M142.004,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span class="text-sm">2021 - 2022</span>
+                        </h6>
+
+                        <div class="absolute -right-2 top-0 w-4 h-4 bg-light rounded-full"></div>
+                    </div>
+                    <div class="absolute top-20 -right-5 w-1/2">
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary">Web Developer</h4>
+                            <h5 class="font-medium">Rabat - Lycom</h5>
+                        </div>
+    
+                        <h6 class="mt-2 flex space-x-3 text-gray-400">
+                            <svg class="w-4 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M495.195,69.462h-54.337V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416 V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444H16.805C7.524,69.462,0,76.986,0,86.267v369.716 c0,9.281,7.524,16.805,16.805,16.805h478.39c9.281,0,16.805-7.524,16.805-16.805V86.267C512,76.986,504.476,69.462,495.195,69.462 z M478.39,439.177H33.61V103.072h37.532v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669 h50.416v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h37.532V439.177z"/> </g></g><g> <g> <path d="M283.449,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,330.185,292.73,322.661,283.449,322.661z M266.643,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M408.088,322.661H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,330.185,417.369,322.661,408.088,322.661z M391.282,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M158.81,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,330.185,168.091,322.661,158.81,322.661z M142.004,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M283.449,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,199.104,292.73,191.58,283.449,191.58z M266.643,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M408.088,191.58H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,199.104,417.369,191.58,408.088,191.58z M391.282,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M158.81,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,199.104,168.091,191.58,158.81,191.58z M142.004,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span class="text-sm">2020 - 2020</span>
+                        </h6>
+
+                        <div class="absolute -left-7 top-0 w-4 h-4 bg-light rounded-full"></div>
+                    </div>
+                    <div class="absolute left-0 top-44 w-1/2 pr-3 lg:pr-0">
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary">Backend Developer</h4>
+                            <h5 class="font-medium">Rabat - Intellcap</h5>
+                        </div>
+    
+                        <h6 class="mt-2 flex space-x-3 text-gray-400">
+                            <svg class="w-4 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M495.195,69.462h-54.337V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416 V56.018c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444h-50.416V56.018 c0-9.281-7.524-16.805-16.805-16.805c-9.281,0-16.805,7.524-16.805,16.805v13.444H16.805C7.524,69.462,0,76.986,0,86.267v369.716 c0,9.281,7.524,16.805,16.805,16.805h478.39c9.281,0,16.805-7.524,16.805-16.805V86.267C512,76.986,504.476,69.462,495.195,69.462 z M478.39,439.177H33.61V103.072h37.532v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669 h50.416v10.669c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h50.416v10.669 c0,9.281,7.524,16.805,16.805,16.805c9.281,0,16.805-7.524,16.805-16.805v-10.669h37.532V439.177z"/> </g></g><g> <g> <path d="M283.449,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,330.185,292.73,322.661,283.449,322.661z M266.643,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M408.088,322.661H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,330.185,417.369,322.661,408.088,322.661z M391.282,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M158.81,322.661h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,330.185,168.091,322.661,158.81,322.661z M142.004,377.558h-21.287v-21.287 h21.287V377.558z"/> </g></g><g> <g> <path d="M283.449,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C300.254,199.104,292.73,191.58,283.449,191.58z M266.643,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M408.088,191.58H353.19c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C424.893,199.104,417.369,191.58,408.088,191.58z M391.282,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g> <g> <path d="M158.81,191.58h-54.897c-9.281,0-16.805,7.524-16.805,16.805v54.897c0,9.281,7.524,16.805,16.805,16.805h54.897 c9.281,0,16.805-7.524,16.805-16.805v-54.897C175.615,199.104,168.091,191.58,158.81,191.58z M142.004,246.477h-21.287V225.19 h21.287V246.477z"/> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span class="text-sm">2019 - 2020</span>
+                        </h6>
+
+                        <div class="absolute -right-2 top-0 w-4 h-4 bg-light rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="mt-52 w-full lg:max-w-4xl mx-auto px-6 lg:px-0 space-y-12">
+        <div class="text-center">
+            <h2 class="capitalize text-3xl font-semibold tracking-wider text-primary">Contact Me</h2>
+            <h6 class="text-lg font-semibold text-secondary">get in touch</h6>
+        </div>
+
+        <div id="contact-me">
+            <h4 class="text-center text-2xl font-semibold">Talk to me</h4>
+
+            <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-y-0 lg:gap-x-10 space-y-7 lg:space-y-0">
+                <a href="mailto:ismailayoub023@gmail.com" class="flex-shrink-0 w-full flex flex-col items-center px-10 py-5 space-y-5 bg-white rounded-lg cursor-pointer shadow-inner hover:shadow-lg">
+                    <div class="flex flex-col items-center text-secondary">
+                        <svg class="w-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 21" id="Layer_21"><path d="M27.61,7h-2a1,1,0,0,1,.95,1.32l-5.33,16a1,1,0,0,1-.95.68h2a1,1,0,0,0,.95-.68l5.33-16A1,1,0,0,0,27.61,7Z"/><path d="M13,15a1,1,0,0,1-.5-.13l-7-4a1,1,0,0,1,1-1.74l6.59,3.77L23.66,9.06a1,1,0,0,1,.68,1.88l-11,4A1,1,0,0,1,13,15Z"/><path d="M11,23H5a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"/><path d="M10,19H3a1,1,0,0,1,0-2h7a1,1,0,0,1,0,2Z"/><path d="M7,15H4a1,1,0,0,1,0-2H7a1,1,0,0,1,0,2Z"/><path d="M22.28,26H5a1,1,0,0,1,0-2H22.28L27.61,8H3A1,1,0,0,1,3,6H27.61a2,2,0,0,1,1.9,2.63l-5.33,16A2,2,0,0,1,22.28,26Z"/></g></svg>
+                        <span class="capitalize font-semibold">email</span>
+                    </div>
+
+                    <h4 class="text-primary font-semibold tracking-wide">ismailayoub023@gmail.com</h4>
+                </a>
+
+                <a href="https://wa.me/00212606633964" target="_blank" class="flex-shrink-0 w-full flex flex-col items-center px-10 py-5 space-y-5 bg-white rounded-lg cursor-pointer shadow-inner hover:shadow-lg">
+                    <div class="flex flex-col items-center text-secondary">
+                        <svg class="w-8 fill-current" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp icon</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        <span class="capitalize font-semibold">whatsapp</span>
+                    </div>
+
+                    <h4 class="text-primary font-semibold tracking-wide">00 212 6 06 63 39 64</h4>
+                </a>
+
+                <a href="tel:00 212 6 06 63 39 64" class="flex-shrink-0 w-full flex flex-col items-center px-10 py-5 space-y-5 bg-white rounded-lg cursor-pointer shadow-inner hover:shadow-lg">
+                    <div class="flex flex-col items-center text-secondary">
+                        <svg class="w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><path d="M48.5,37.9L42.4,33c-1.4-1.1-3.4-1.2-4.8-0.1l-5.2,3.8c-0.6,0.5-1.5,0.4-2.1-0.2l-7.8-7l-7-7.8 c-0.6-0.6-0.6-1.4-0.2-2.1l3.8-5.2c1.1-1.4,1-3.4-0.1-4.8l-4.9-6.1c-1.5-1.8-4.2-2-5.9-0.3L3,8.4c-0.8,0.8-1.2,1.9-1.2,3 c0.5,10.2,5.1,19.9,11.9,26.7S30.2,49.5,40.4,50c1.1,0.1,2.2-0.4,3-1.2l5.2-5.2C50.5,42.1,50.4,39.3,48.5,37.9z"/></svg>
+                        <span class="capitalize font-semibold">Phone</span>
+                    </div>
+
+                    <h4 class="text-primary font-semibold tracking-wide">00 212 6 06 63 39 64</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-20 mb-12 lg:mb-0 bg-white px-6 py-2">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-center text-sm font-semibold text-gray-500">Ismail Ayou &copy; Web Developer</h1>
+        </div>
+    </footer>
+
+    <script src="./dist/main.js"></script>
+</body>
+</html>
